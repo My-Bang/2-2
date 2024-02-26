@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹프로그래밍 7조</title>
+        <link href="./css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="d-flex" id="wrapper">
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">웹프로그래밍 7조</div>
+                <div class="list-group list-group-flush">
+                    <a class=" list-group-item-action list-goup-item-light p-3" href="living_point.html">리빙포인트</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="">간편계산기</a>
+
+
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <h1>간단계산기</h1>
+
+                    <div class="faq-content">
+                    <button class="question" id="que-3"><span id="que-3-toggle">+</span><span>계산기</span></button>
+                    <div class="answer" id="ans-3"><input type="text" id="txtBox1">+<input type="text" id="txtBox2"><br>
+                        <input type="button" value="더하기" onclick="test01()"><br>
+                        <input type="text" id="txtBox3"></div>       
+                    </div>
+                    
+                            
+                       <!-- bmi 계산기 -->
+                            <div class="faq-content">
+                                <button class="question" id="que-6"><span id="que-6-toggle">+</span><span>BMI계산기</span></button>
+                                <div class="answer" id="ans-6">    <p>
+                                    키 : <input type="number" id="height"/> cm</p>                             
+                                  <p>몸무게 : <input type="number" id="weight"/> kg</p>                 
+                                  <p>당신의 체질량지수는 <output id="bmi">?</output>입니다.</p>                                 
+                                  <input type="button" id="button" onclick="bmi()" value="계산"/>                                 
+                                   </div>
+                            </div>
+                            
+
+                            <!-- 날짜 계산기 -->
+                            <div class="faq-content">
+                                <button class="question" id="que-7"><span id="que-7-toggle">+</span><span>날짜 계산기</span></button>
+                                <div class="answer" id="ans-7">                                                                  
+                                        <h3>오늘 부터</h3>
+                                        <p id="accent">일</p>
+                                        <input id="input_date" type="date">
+                                        <input id="input_submit" type="submit" onclick="input()" value="확인">
+                                    </div>
+                                </div>                                                 
+
+                            <!-- 단위 계산기 -->
+                            <div class="faq-content">
+                                <button class="question" id="que-8"><span id="que-8-toggle">+</span><span>단위 변환 계산기</span></button>
+                                <div class="answer" id="ans-8">                                    
+                                   
+                                    <input type="text" id='inBox'>
+                                    <select id="inSelect">
+                                      <option value="m">m</option>
+                                      <option value="cm">cm</option>
+                                      <option value="mm">mm</option>
+                                      <option value="inch">inch</option>                                   
+                                    </select>                                 
+                                    <span>=></span>                               
+                                    <select id="outSelect">
+                                      <option value="m">m</option>
+                                      <option value="cm">cm</option>
+                                      <option value="mm">mm</option>
+                                      <option value="inch">inch</option>                                                                     
+                                    </select>
+                                    <input type="text" id='outBox'>
+                                    <button id='goBtn' onclick="size()">변환</button>                                                                                                                                                               
+                                </div>
+                                    <!-- 코드 끝 -->
+
+<script src="js/scripts.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
